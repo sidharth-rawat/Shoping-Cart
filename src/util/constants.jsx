@@ -1,9 +1,9 @@
-import {QueryClientConfig } from 'react-query';
+import {QueryClient } from 'react-query';
 
 const ONE_SEC = 1000;
 const FIVE_MINUTE = ONE_SEC * 60 * 5;
 
-export const queryClient = new QueryClientConfig ({
+export const queryClient = new QueryClient ({
 
     defaultOptions: {
         queries: {
