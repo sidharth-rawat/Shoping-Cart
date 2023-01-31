@@ -1,9 +1,9 @@
-// import {QueryClientConfig } from 'react-query';
+import {QueryClientConfig } from 'react-query';
 
 const ONE_SEC = 1000;
 const FIVE_MINUTE = ONE_SEC * 60 * 5;
 
-export const queryClientConfig ={
+export const queryClient = new QueryClientConfig ({
 
     defaultOptions: {
         queries: {
@@ -16,4 +16,4 @@ export const queryClientConfig ={
             refetchOnWindowFocus: false,
         }
     }
-}
+})

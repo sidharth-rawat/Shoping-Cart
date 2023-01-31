@@ -18,7 +18,7 @@ const Products = () =>{
         const [products, setProducts] = useState([]);
         const ONE_SEC = 1000;
         const FIVE_MINUTE = ONE_SEC * 60 * 5;
-        const {isLoading , isFetching} = useQuery('productfetch',()=> fetchProducts(),
+        const {isLoading , isFetching} = useQuery('productfetch',fetchProducts,
         {
             enabled: true,
             cacheTime:FIVE_MINUTE,

@@ -12,9 +12,10 @@ import  { Loading } from "./components/loading"
 import {ReactQueryDevtools } from 'react-query/devtools'
 import {Cart} from "./views";
 import { Home } from "./views";
+import { queryClient } from "./util/constants";
 const container = document.getElementById("root");
 const root = createRoot(container);
-const query = new QueryClient()
+const query = new QueryClient(queryClient)
 root.render(
   <React.StrictMode>
     <Provider store={store}>
